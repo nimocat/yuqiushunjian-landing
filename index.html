@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="zh-CN" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>羽球时刻 - AI 羽毛球自动剪辑</title>
+    <meta
+      name="description"
+      content="羽球时刻是一款面向羽毛球爱好者的 AI 自动剪辑 App。选择比赛视频，自动识别有效回合，边处理边预览，一键导出精彩集锦。"
+    />
+    <meta name="theme-color" content="#050806" />
+    <meta property="og:title" content="羽球时刻 - AI 羽毛球自动剪辑" />
+    <meta
+      property="og:description"
+      content="自研羽切S1剪辑引擎，自动识别每个精彩回合，边剪边看，一键导出。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.yuqiushunjian.com/" />
+    <meta property="og:image" content="https://www.yuqiushunjian.com/assets/brand/logo-512.png" />
+    <link rel="icon" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./assets/brand/logo-192.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      document.documentElement.classList.remove("no-js");
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="speed-lines" aria-hidden="true"></div>
+      <div class="noise-layer" aria-hidden="true"></div>
+      <div class="cursor-glow" aria-hidden="true"></div>
+
+      <header class="top-nav">
+        <a class="brand-lockup" href="#top" aria-label="羽球时刻首页">
+          <img src="./assets/brand/logo-192.png" alt="" />
+          <span>羽球时刻</span>
+        </a>
+        <nav aria-label="页面导航">
+          <a href="#engine">AI 引擎</a>
+          <a href="#workflow">剪辑流程</a>
+          <a href="#features">功能</a>
+          <a href="#privacy">隐私</a>
+        </nav>
+        <a class="nav-cta" href="#download">立即了解</a>
+      </header>
+
+      <main id="top">
+        <section class="hero-section section-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow">
+              <span class="pulse-dot"></span>
+              自研 AI 剪辑引擎 · 羽切S1
+            </div>
+            <h1>
+              打完球，
+              <span>精彩回合</span>
+              自动成片
+            </h1>
+            <p class="hero-lede">
+              羽球时刻面向羽毛球比赛视频自动剪辑。选择视频后，AI 自动识别有效回合，
+              片段边处理边出现在预览里，推荐保留、精彩一分钟、合并导出一步完成。
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button magnetic" href="#workflow">
+                <span>查看剪辑流程</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12m-5-5 5 5-5 5" /></svg>
+              </a>
+              <a class="ghost-button magnetic" href="#features">功能一览</a>
+            </div>
+            <div class="hero-metrics" aria-label="产品特性">
+              <div>
+                <strong data-count="10">0</strong>
+                <span>fps AI 采样</span>
+              </div>
+              <div>
+                <strong>本地</strong>
+                <span>视频优先处理</span>
+              </div>
+              <div>
+                <strong>1h</strong>
+                <span>长视频保护</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="羽球时刻 App 界面预览">
+            <div class="hero-orbit" aria-hidden="true"></div>
+            <div class="phone-stage tilt-card">
+              <div class="phone-shadow"></div>
+              <div class="phone-device">
+                <div class="phone-speaker"></div>
+                <div class="screen-carousel" data-carousel>
+                  <img class="active" src="./assets/screens/app-screen-4.webp" alt="羽球时刻首页" />
+                  <img src="./assets/screens/app-screen-2.webp" alt="预览与片段界面" />
+                  <img src="./assets/screens/app-screen-3.webp" alt="我的与反馈界面" />
+                </div>
+              </div>
+              <div class="floating-badge badge-top">
+                <span>AI</span>
+                <strong>边剪边看</strong>
+              </div>
+              <div class="floating-badge badge-bottom">
+                <span>6</span>
+                <strong>已生成回合</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-strip reveal" aria-label="核心承诺">
+          <div class="trust-card">
+            <span>01</span>
+            <strong>本地处理</strong>
+            <p>原视频主要在手机端解析，不为了剪辑分析自动上传。</p>
+          </div>
+          <div class="trust-card">
+            <span>02</span>
+            <strong>边剪边看</strong>
+            <p>候选片段逐步出现，不必等完整视频全部分析完。</p>
+          </div>
+          <div class="trust-card">
+            <span>03</span>
+            <strong>一键导出</strong>
+            <p>合并精彩集锦或分段保存，都能直接进入导出流程。</p>
+          </div>
+        </section>
+
+        <section id="engine" class="engine-section">
+          <div class="section-heading reveal">
+            <p>AI ENGINE</p>
+            <h2>羽切S1，把羽毛球节奏变成剪辑判断</h2>
+            <span>
+              针对业余羽毛球视频的拍摄角度、等待、捡球、短暂停顿做优化，减少手动拖剪时间。
+            </span>
+          </div>
+          <div class="engine-console reveal">
+            <div class="console-panel">
+              <div class="console-top">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="signal-grid" aria-hidden="true">
+                <i style="--h: 42%"></i><i style="--h: 72%"></i><i style="--h: 36%"></i>
+                <i style="--h: 88%"></i><i style="--h: 54%"></i><i style="--h: 64%"></i>
+                <i style="--h: 31%"></i><i style="--h: 78%"></i><i style="--h: 47%"></i>
+                <i style="--h: 90%"></i><i style="--h: 58%"></i><i style="--h: 69%"></i>
+                <i style="--h: 44%"></i><i style="--h: 82%"></i><i style="--h: 39%"></i>
+                <i style="--h: 75%"></i><i style="--h: 53%"></i><i style="--h: 62%"></i>
+              </div>
+              <div class="scan-line"></div>
+            </div>
+            <div class="engine-copy">
+              <div class="mini-label">粗剪 + 精修</div>
+              <h3>先定位，再整理边界</h3>
+              <p>
+                首轮快速发现可能的有效回合，随后整理片段边界，压掉开头等待、片尾冗余和无效移动，
+                让用户看到的是可预览、可选择、可导出的结果。
+              </p>
+              <ul>
+                <li>自动识别有效回合，不把整场视频丢给用户慢慢拖。</li>
+                <li>片段生成后立刻进入预览，剪辑过程有感知。</li>
+                <li>推荐保留与弱片段区分，减少误选成本。</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="workflow" class="workflow-section">
+          <div class="section-heading reveal">
+            <p>WORKFLOW</p>
+            <h2>从选择视频到导出，三步完成</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-card reveal">
+              <div class="timeline-index">1</div>
+              <h3>选择比赛视频</h3>
+              <p>导入本地比赛视频，超过 1 小时会提前提示，避免长视频误导入。</p>
+            </article>
+            <article class="timeline-card reveal">
+              <div class="timeline-index">2</div>
+              <h3>AI 自动生成回合</h3>
+              <p>处理过程中片段逐步出现，用户可以提前预览，不用等待最后一股脑展示。</p>
+            </article>
+            <article class="timeline-card reveal">
+              <div class="timeline-index">3</div>
+              <h3>选择并导出</h3>
+              <p>只选推荐、精彩一分钟、全选、全不选四种动作，最终合并或分段导出。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="features" class="feature-section">
+          <div class="section-heading reveal">
+            <p>FEATURES</p>
+            <h2>剪辑端功能完整覆盖</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card reveal tilt-card">
+              <div class="feature-icon">▶</div>
+              <h3>预览与片段</h3>
+              <p>生成的回合以横向卡片展示，点击即可切换预览，回合时长和时间段清晰可见。</p>
+            </article>
+            <article class="feature-card reveal tilt-card">
+              <div class="feature-icon">✓</div>
+              <h3>只选推荐</h3>
+              <p>AI 给出推荐保留片段，一键选择更稳的回合，减少用户逐个判断的压力。</p>
+            </article>
+            <article class="feature-card reveal tilt-card">
+              <div class="feature-icon">✦</div>
+              <h3>精彩一分钟</h3>
+              <p>自动挑选更精彩的回合，组合成一分钟左右短片，适合快速分享训练或比赛亮点。</p>
+            </article>
+            <article class="feature-card reveal tilt-card">
+              <div class="feature-icon">▣</div>
+              <h3>全选 / 全不选</h3>
+              <p>批量选择模式和用户手动编辑双向联动，适合快速整理多段回合。</p>
+            </article>
+            <article class="feature-card reveal tilt-card">
+              <div class="feature-icon">⬚</div>
+              <h3>合并导出</h3>
+              <p>把选中的回合合成一个精彩集锦，导出后可直接分享给朋友。</p>
+            </article>
+            <article class="feature-card reveal tilt-card">
+              <div class="feature-icon">▥</div>
+              <h3>分段导出</h3>
+              <p>每个回合单独保存，适合教练复盘、逐球分析或按片段归档。</p>
+            </article>
+            <article class="feature-card reveal tilt-card">
+              <div class="feature-icon">◌</div>
+              <h3>后台进度</h3>
+              <p>导出时展示进度状态，离开 App 也能感知任务进展，失败可回到 App 重试。</p>
+            </article>
+            <article class="feature-card reveal tilt-card">
+              <div class="feature-icon">◎</div>
+              <h3>近期导出</h3>
+              <p>首页和“我的”保留导出历史，可以查看详情、预览本地文件并再次分享。</p>
+            </article>
+            <article class="feature-card reveal tilt-card">
+              <div class="feature-icon">!</div>
+              <h3>反馈与隐私</h3>
+              <p>星级反馈帮助改进剪辑精度；隐私条款和比赛视频授权开关清楚可控。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="showcase-section">
+          <div class="section-heading reveal">
+            <p>APP PREVIEW</p>
+            <h2>黑黄运动风，所有操作都围绕“快剪出片”</h2>
+          </div>
+          <div class="showcase-grid reveal">
+            <figure>
+              <img src="./assets/screens/app-screen-4.webp" alt="羽球时刻首页选择视频和近期导出" />
+              <figcaption>选择视频 · 本地处理 · 近期导出</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/screens/app-screen-2.webp" alt="预览与片段功能界面" />
+              <figcaption>边剪边看 · 预览片段 · 推荐选择</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/screens/app-screen-3.webp" alt="我的、用户反馈和隐私功能" />
+              <figcaption>账号资料 · 用户反馈 · 隐私授权</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="privacy" class="privacy-section section-grid">
+          <div class="privacy-copy reveal">
+            <div class="mini-label">LOCAL FIRST</div>
+            <h2>本地优先，分享可控</h2>
+            <p>
+              羽球时刻不会因为剪辑分析自动上传原始视频。用户可以在“我的”里查看隐私条款，
+              也可以自主决定是否同意把比赛视频用于后续算法优化。
+            </p>
+          </div>
+          <div class="privacy-panel reveal">
+            <div>
+              <span>视频处理</span>
+              <strong>本地优先</strong>
+            </div>
+            <div>
+              <span>反馈提交</span>
+              <strong>星级 + 建议</strong>
+            </div>
+            <div>
+              <span>训练授权</span>
+              <strong>用户可关闭</strong>
+            </div>
+          </div>
+        </section>
+
+        <section id="download" class="cta-section reveal">
+          <img src="./assets/brand/export-shuttle.png" alt="" />
+          <div>
+            <p>READY TO CUT</p>
+            <h2>让每场球都有值得保存的精彩时刻</h2>
+            <span>羽球时刻剪辑端，正在为羽毛球爱好者持续优化。</span>
+          </div>
+          <a class="primary-button magnetic" href="#top">
+            <span>回到顶部</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m-7 7 7-7 7 7" /></svg>
+          </a>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="brand-lockup">
+          <img src="./assets/brand/logo-192.png" alt="" />
+          <span>羽球时刻</span>
+        </div>
+        <p>© 2026 羽球时刻 · AI 羽毛球自动剪辑</p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
